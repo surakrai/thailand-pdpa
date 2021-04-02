@@ -293,6 +293,11 @@ export default {
         padding-right: 1rem;
       }
 
+      @media screen and (max-width: 767px) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+
       h5 {
         font-weight: bold;
         font-size: 1.25rem;
@@ -334,6 +339,10 @@ export default {
       overflow-y: auto;
 
       [data-type="sidebar"] & {
+        padding: 1rem;
+      }
+
+      @media screen and (max-width: 767px) {
         padding: 1rem;
       }
 
@@ -452,6 +461,11 @@ export default {
         padding-left: 1rem;
         padding-right: 1rem;
       }
+
+      @media screen and (max-width: 767px) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
     }
   
     &-backdrop {
@@ -484,6 +498,11 @@ export default {
     border-bottom: 1px solid #dee2e6;
 
     [data-type="sidebar"] & {
+      padding: 0 1rem 1rem;
+      margin: 0 -1rem 2rem;
+    }
+
+    @media screen and (max-width: 767px) {
       padding: 0 1rem 1rem;
       margin: 0 -1rem 2rem;
     }

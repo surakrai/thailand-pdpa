@@ -119,7 +119,7 @@ export default {
     },
     items: [
       {
-        checked: false,
+        checked: true,
         title: 'คุกกี้ที่จำเป็น',
         description: 'คุกกี้ประเภทนี้มีความจำเป็นต่อการทำงานของเว็บไซต์ เพื่อให้เว็บไซต์สามารถทำงานได้เป็นปกติ มีความปลอดภัย และทำให้ท่านสามารถเข้าใช้เว็บไซต์ได้ เช่น การ log in เข้าสู่เว็บไซต์ การยืนยันตัวตน ทั้งนี้ ท่านไม่สามารถปิดการใช้งานของคุกกี้ประเภทนี้ผ่านระบบของเว็บไซต์ของเราได้',
       },
@@ -160,7 +160,7 @@ export default {
 
   mounted() {
     window.addEventListener('keydown', ev => {
-      if (ev.keyCode === 27) {
+      if (ev.keyCode === 27 && this.showSetting) {
         this.$store.commit('SHOW_SETTING', false)
       }
     })

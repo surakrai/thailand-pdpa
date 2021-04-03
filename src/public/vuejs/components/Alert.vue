@@ -12,7 +12,7 @@
 
     .thailand-pdpa-alert-buttons
       button.button.thailand-pdpa-button.secondary(@click="$store.commit('SHOW_SETTING', true)") การตั้งค่าคุกกี้
-      button.button.thailand-pdpa-button ยินยอมทั้งหมด
+      button.button.thailand-pdpa-button(@click="showAlert = false") ยินยอมทั้งหมด
 </template>
 
 <script>
@@ -50,8 +50,8 @@ export default {
 
     &-content {
       @media screen and (max-width: 991px) {
-        padding-left: 2rem;
-        padding-right: 2rem;
+        padding-left: 0;
+        padding-right: 1rem;
       }
   
       @media screen and (min-width: 992px) {
